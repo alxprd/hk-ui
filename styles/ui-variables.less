@@ -10,12 +10,15 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+// HK colors
+@hk-orange: hsl(30, 100%, 50%);
+@hk-background-ui: hsl(30, 100%, 3%);
 
-// Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+// Text colors
+@text-color:           @hk-orange;
+@text-color-subtle:    darken(@hk-orange, 30%);
+@text-color-highlight: lighten(@hk-orange, 15%);
+@text-color-selected:  lighten(@hk-orange, 30%);
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
@@ -23,9 +26,9 @@
 @text-color-error:   hsl(  9, 100%, 64%);
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
+@background-color-info:    hsl(30,   80%, 35%);
 @background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
+@background-color-warning: hsl(46,   91%, 43%);
 @background-color-error:   hsl(0,    70%, 50%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
@@ -33,8 +36,8 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: @hk-background-ui;
+@base-border-color:     lighten(@hk-background-ui, 25%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -77,18 +80,18 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
-@input-font-size: 14px;
+@font-size: 10px;
+@input-font-size: 12px;
 
 @disclosure-arrow-size: 12px;
 
-@component-padding: 10px;
+@component-padding: 5px;
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
-@component-line-height: 25px;
+@component-line-height: 20px;
 
-@tab-height: 30px;
+@tab-height: 25px;
 
 // Misc
-@component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@component-border-radius: 0px;
+//@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
